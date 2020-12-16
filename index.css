@@ -1,0 +1,96 @@
+.pre-loader{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.illustration{
+    animation: fade 5s ease forwards 0.1s,spin 3s ease-in-out;
+    transform-origin: center center;
+    /* animation-name: spin;
+  animation-duration: 5000ms;
+  
+  animation-timing-function: linear; */
+}
+.pre-text{
+    
+    animation: fill 0.5s ease forwards 3s;
+}
+#pre-loader-ill path:nth-last-child(1){
+    stroke-dasharray: 663.5999755859375;
+    stroke-dashoffset: 663.5999755859375;
+    animation: line-anim 2s ease forwards 1.8s,fill 0.5s ease forwards 3s;
+}
+#pre-loader-ill path:nth-last-child(2){
+    stroke-dasharray:640.3840942382812;
+    stroke-dashoffset:640.3840942382812;
+    animation: line-anim 2s ease forwards 1.5s,fill 0.5s ease forwards 3s;
+}
+#pre-loader-ill path:nth-last-child(3){
+    stroke-dasharray:640.3840942382812;
+    stroke-dashoffset:640.3840942382812;
+    animation: line-anim 2s ease forwards 1.2s,fill 0.5s ease forwards 3s;
+}
+#pre-loader-ill path:nth-last-child(4){
+    stroke-dasharray:640.3840942382812;
+    stroke-dashoffset:640.3840942382812;
+    animation: line-anim 2s ease forwards 0.9s,fill 0.5s ease forwards 3s;
+}
+#pre-loader-ill path:nth-last-child(5){
+    stroke-dasharray:640.3840942382812;
+    stroke-dashoffset:640.3840942382812;
+    animation: line-anim 2s ease forwards 0.6s,fill 0.5s ease forwards 3s;
+}
+#pre-loader-ill path:nth-last-child(6){
+    stroke-dasharray:640.3840942382812;
+    stroke-dashoffset:640.3840942382812;
+    animation: line-anim 2s ease forwards 0.3s,fill 0.5s ease forwards 3s;
+}
+#pre-loader-ill path:nth-last-child(7){
+    stroke-dasharray:640.3840942382812;
+    stroke-dashoffset:640.3840942382812;
+    animation: line-anim 2s ease forwards 0.2s,fill 0.5s ease forwards 3s;
+}
+#pre-loader-ill path:nth-last-child(8){
+    stroke-dasharray:680.3840942382812;
+    stroke-dashoffset:680.3840942382812;
+    animation: line-anim 2s ease forwards 0.1s,fill 0.5s ease forwards 3s;
+}
+.two-circles{
+    fill: none;
+    stroke-dasharray:5000;
+    stroke-dashoffset:5000;
+    animation: line-anim 2s ease forwards 0.1s,fill 0.5s ease forwards 1s;
+}
+@keyframes fade{
+    from{
+       opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill{
+    from{
+        fill:transparent;
+    }
+    to{
+        fill: #132B47;
+       
+
+    }
+}
