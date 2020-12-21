@@ -4,12 +4,36 @@
     box-sizing: border-box;
     
 }
+#pre-loader-ill{
+    width: 40%;
+    /* height: 40%; */
+   
+    animation: lefting 1s linear forwards 6s, mover 3s linear forwards 3s;
+   
+}
 .pre-loader{
     height: 100vh;
+    /* position: absolute; */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background-color: aqua; */
+    /* animation: back 3s ease forwards ; */
     
+}
+
+#coming{
+    /* display: none; */
+    /* animation: fadeInAnimation 3s ease 6s 1 forwards;  */
+         position: relative;
+         
+    animation: fadeInAnimation 5s linear forwards   ; 
+   
+    animation-iteration-count: 1; 
+    /* animation-fill-mode: forwards; */
+           
+            
 }
 .illustration{
     animation: fade 5s ease forwards 0.1s,spin 3s ease-in-out;
@@ -19,10 +43,7 @@
   
   animation-timing-function: linear; */
 }
-.pre-text{
-    
-    animation: fill 0.5s ease forwards 3s;
-}
+
 #pre-loader-ill path:nth-last-child(1){
     stroke-dasharray: 663.5999755859375;
     stroke-dashoffset: 663.5999755859375;
@@ -100,3 +121,34 @@
 
     }
 }
+@keyframes mover{
+    from{
+        width: 40%;
+        /* height: 0%; */
+    }
+    to{
+        width: 4%;
+       /* transform:translateY(40%);
+       transform: translateX(-185%); */
+       
+        /* height: 6%; */
+    }
+}
+@keyframes lefting{
+    to{
+        transform: translate(-185%,40%);
+         
+    }
+}
+@keyframes fadeInAnimation { 
+    0% { 
+        height: 0%;
+        opacity: 0; 
+       
+    } 
+    100% { 
+        height: max-content;
+        opacity: 1; 
+        
+    } 
+} 
