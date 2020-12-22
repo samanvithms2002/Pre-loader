@@ -8,7 +8,7 @@
     width: 40%;
     /* height: 40%; */
    
-    animation: lefting 1s linear forwards 6s, mover 3s linear forwards 3s;
+    animation: lefting 0.5s linear forwards 4s, mover 1s linear forwards 3s;
    
 }
 .pre-loader{
@@ -28,7 +28,7 @@
     /* animation: fadeInAnimation 3s ease 6s 1 forwards;  */
          position: relative;
          
-    animation: fadeInAnimation 5s linear forwards   ; 
+    animation: fadeInAnimation 4s linear forwards   ; 
    
     animation-iteration-count: 1; 
     /* animation-fill-mode: forwards; */
