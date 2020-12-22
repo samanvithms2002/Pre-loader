@@ -8,7 +8,7 @@
     width: 40%;
     /* height: 40%; */
    
-    animation: lefting 0.5s linear forwards 4s, mover 1s linear forwards 3s;
+    animation: lefting 0.3s linear forwards 3.5s, mover 0.5s linear forwards 3s;
    
 }
 .pre-loader{
